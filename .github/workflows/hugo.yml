@@ -55,3 +55,4 @@ jobs:
           external_repository: IEC-61499/IEC-61499.github.io
           publish_branch: main  # default: gh-pages
           publish_dir: ./public
+          cname: iec61499.com.cn
