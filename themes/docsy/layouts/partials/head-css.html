@@ -1,5 +1,5 @@
 
-{{ $scssMain := "scss/main.scss"}}
+{{ $scssMain := "https://cdn.jsdelivr.net/gh/iec-61499/iec-61499.github.io@main/scss/main.scss"}}
 {{ if .Site.IsServer }}
 {{/* Note the missing postCSS. This makes it snappier to develop in Chrome, but makes it look sub-optimal in other browsers. */}}
 {{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" true) }}
