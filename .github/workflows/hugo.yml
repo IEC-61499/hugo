@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -54,4 +54,4 @@ jobs:
           personal_token: ${{ secrets.HUGO_TOKEN }}
           external_repository: IEC-61499/IEC-61499.github.io
           publish_branch: main  # default: gh-pages
-          publish_dir: ./
+          publish_dir: ./public
