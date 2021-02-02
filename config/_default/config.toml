@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://iec61499.com.cn/"
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
