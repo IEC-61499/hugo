@@ -155,7 +155,7 @@ https://cdn.jsdelivr.net/gh/<用户名>/<仓库名>@版本号/<文件及路径>
 
 github.com 替换成 cdn.jsdelivr.net/gh
 
-/blob/ 替换成 @ 
+/blob/ 替换成 @
 
 注：main为创建的版本号
 
@@ -165,15 +165,14 @@ github.com 替换成 cdn.jsdelivr.net/gh
 
 需要jsDelivr缓存实时刷新，只需将想刷新的链接的开头的
 
-```
-
+```Code
 https://cdn.jsdelivr.net/
 
 ```
 
 替换成
 
-```
+```Code
 
 https://purge.jsdelivr.net/
 
@@ -201,7 +200,7 @@ ubuntu系统中修改/etc/hosts文件；
 
 用编辑器打开hosts文件，在末尾处添加以下内容：
 
-```
+```Code
 
 199.232.69.194 github.global.ssl.fastly.net
 140.82.112.4 github.com
@@ -212,7 +211,7 @@ ubuntu系统中修改/etc/hosts文件；
 
 可以直接选中以下内容复制粘贴，20210126更新
 
-```
+```Code
 
 # GitHub Start 
 140.82.113.3       github.com
