@@ -7,7 +7,7 @@ draft: false
 images: []
 menu:
   book:
-      parent: "序言"
+      parent: "prologue"
 weight: 10
 toc: true
 ---

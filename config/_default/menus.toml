@@ -9,10 +9,14 @@
   weight = 60
   identifier = "help"
   url = "/docs/help/"
-
+[[book]]
+  name = "序言"
+  weight = 20
+  identifier = "prologue"
+  url = "/book/prologue/"
 [[main]]
   name = "书籍"
-  url = "/book/introduction/"
+  url = "/book/prologue/introduction/"
   weight = 1
 [[main]]
   name = "示例"
