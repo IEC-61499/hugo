@@ -16,6 +16,12 @@
   identifier = "bprologue"
   url = "/book/prologue/"
 
+[[demo]]]
+  name = "Mbed示例"
+  weight = 2
+  identifier = "mbed"
+  url = "/book/mbed/"
+
 [[main]]
   name = "书籍"
   url = "/book/prologue/introduction/"
