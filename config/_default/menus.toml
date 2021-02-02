@@ -1,6 +1,6 @@
 [[docs]]
   name = "Prologue"
-  weight = 10
+  weight = 50
   identifier = "prologue"
   url = "/docs/prologue/"
 
@@ -12,7 +12,7 @@
 
 [[book]]
   name = "序言"
-  weight = 70
+  weight = 30
   identifier = "book_prologue"
   url = "/book/prologue/"
 
