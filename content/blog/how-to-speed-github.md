@@ -22,33 +22,25 @@ tags: ["加速", "github", "cdn"]
 原地址
 
 ```Shell
-
 git clone https://github.com/docker/compose.git
-
 ```
 
 改为
 
 ```Shell
-
 git clone https://github.com.cnpmjs.org/docker/compose.git
-
 ```
 
 或者
 
 ```Shell
-
 git clone https://hub.fastgit.org/docker/compose.git
-
 ```
 
 或者
 
 ```Shell
-
 git clone https://gitclone.com/github.com/docker/compose.git
-
 ```
 
 #### Release下载加速
@@ -56,41 +48,31 @@ git clone https://gitclone.com/github.com/docker/compose.git
 原地址
 
 ```Shell
-
 wget https://github.com/golang/go/archive/go1.15.7.tar.gz
-
 ```
 
 改为
 
 ```Shell
-
 wget https://hub.fastgit.org/golang/go/archive/go1.15.7.tar.gz
-
 ```
 
 #### 免替换法
 
 ```Shell
-
 git config --global url."https://hub.fastgit.org".insteadOf https://github.com
-
 ```
 
 #### 查看git配置信息
 
 ```Shell
-
 git config --global --list
-
 ```
 
 #### 取消设置
 
 ```Shell
-
 git config --global --unset url.https://github.com/.insteadof
-
 ```
 
 ## raw文件下载加速
@@ -100,17 +82,13 @@ git config --global --unset url.https://github.com/.insteadof
 原地址：
 
 ```Shell
-
 wget https://raw.githubusercontent.com/kubernetes/kubernetes/master/README.md
-
 ```
 
 替换为
 
 ```Shell
-
 wget https://raw.staticdn.net/kubernetes/kubernetes/master/README.md
-
 ```
 
 ## GitHub + Jsdelivr CDN加速
@@ -165,15 +143,12 @@ github.com 替换成 cdn.jsdelivr.net/gh
 
 ```Code
 https://cdn.jsdelivr.net/
-
 ```
 
 替换成
 
 ```Code
-
 https://purge.jsdelivr.net/
-
 ```
 
 即可实时刷新，刷新成功后，浏览器会返回缓存刷新成功的信息。
@@ -197,10 +172,8 @@ ubuntu系统中修改/etc/hosts文件；
 用编辑器打开hosts文件，在末尾处添加以下内容：
 
 ```Code
-
 199.232.69.194 github.global.ssl.fastly.net
 140.82.112.4 github.com
-
 ```
 
 同时也可以查询其他域名地址，解决DNS污染问题。
@@ -208,7 +181,6 @@ ubuntu系统中修改/etc/hosts文件；
 可以直接选中以下内容复制粘贴，20210126更新
 
 ```Code
-
 # GitHub Start 
 140.82.113.3       github.com
 140.82.114.20      gist.github.com
@@ -241,7 +213,6 @@ ubuntu系统中修改/etc/hosts文件；
 199.232.68.133     avatars8.githubusercontent.com
 199.232.96.133     avatars9.githubusercontent.com
 # GitHub End
-
 ```
 
 ### 3. 本地DNS刷新
@@ -249,19 +220,15 @@ ubuntu系统中修改/etc/hosts文件；
 windows中若遇到网络异常，可能是DNS缓存的问题，可以命令刷新。
 
 ```Shell
-
 ipconfig /displaydns # 显示dns缓存 
 ipconfig /flushdns   # 刷新DNS记录
 ipconfig /renew      # 重请从DHCP服务器获得IP
-
 ```
 
 ubuntu中重启网络
 
 ```Shell
-
 sudo /etc/init.d/networking restart
-
 ```
 
 ## 通过 Gitee 导入Github仓库进行中转下载

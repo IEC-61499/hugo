@@ -34,9 +34,7 @@ AccessKeyID     阿里云访问ID
 AccessKeySecret 阿里云访问密钥
 
 ```Shell
-
 aliyun-ddns-cli --id ${AccessKeyID} --secret ${AccessKeySecret} --ipapi http://v6.ipv6-test.com/api/myip.php auto-update -6 --domain qu.js.cn -r 600
-
 ```
 
 ## 结束语
