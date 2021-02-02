@@ -16,7 +16,7 @@
   identifier = "bprologue"
   url = "/book/prologue/"
 
-[[demo]]]
+[[demo]]
   name = "Mbed示例"
   weight = 2
   identifier = "mbed"
