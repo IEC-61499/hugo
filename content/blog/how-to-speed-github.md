@@ -161,8 +161,6 @@ github.com 替换成 cdn.jsdelivr.net/gh
 
 建议使用发布版本号方案，只要单次版本号下的内容大小不超过50M即可，超过50M时使用多版本号。
 
-{{< admonition tip >}}
-
 需要jsDelivr缓存实时刷新，只需将想刷新的链接的开头的
 
 ```Code
@@ -179,8 +177,6 @@ https://purge.jsdelivr.net/
 ```
 
 即可实时刷新，刷新成功后，浏览器会返回缓存刷新成功的信息。
-
-{{< /admonition >}}
 
 ## 修改HOSTS文件进行加速
 
