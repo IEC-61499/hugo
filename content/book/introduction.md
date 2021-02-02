@@ -6,9 +6,9 @@ lastmod: 2021-01-06T08:48:57+00:00
 draft: false
 images: []
 menu:
-  docs:
-    parent: "prologue"
-weight: 100
+  main:
+    parent: "book"
+    weight: 30
 toc: true
 ---
 # Modelling ControlSystems UsingIEC 61499 2nd Edition
