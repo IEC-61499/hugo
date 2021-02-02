@@ -1,6 +1,4 @@
-
-public/
-resources/
-node_modules/
-tech-doc-hugo
-
+functions
+node_modules
+public
+resources
