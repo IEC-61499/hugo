@@ -13,7 +13,7 @@
 [[book]]
   name = "序言"
   weight = 70
-  identifier = "prologue"
+  identifier = "book_prologue"
   url = "/book/prologue/"
 
 [[main]]

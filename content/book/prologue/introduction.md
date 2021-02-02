@@ -7,7 +7,7 @@ draft: false
 images: []
 menu:
   book:
-      parent: "prologue"
+      parent: "book_prologue"
 weight: 110
 toc: true
 ---
