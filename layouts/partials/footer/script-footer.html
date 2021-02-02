@@ -6,14 +6,14 @@
 {{ if eq (hugo.Environment) "development" -}}
   {{ $app := resources.Get "js/app.js" -}}
   {{ $js := slice $lazysizes $clipboard $flexsearch $app | resources.Concat "main.js" -}}
-  <script src="{{ $js.Permalink }}" defer></script>
-  <script src="{{ $index.Permalink }}" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/IEC-61499/IEC-61499.github.io@main{{ $js.Permalink }}" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/IEC-61499/IEC-61499.github.io@main{{ $index.Permalink }}" defer></script>
 {{ else -}}
   {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
   {{ $app := resources.Get "js/app.js" | minify -}}
   {{ $js := slice $lazysizes $clipboard $flexsearch $instantPage $app | resources.Concat "main.js" -}}
   {{ $jsProd := $js | resources.Fingerprint "sha512" -}}
   {{ $indexProd := $index | resources.Minify | resources.Fingerprint "sha512" -}}
-  <script src="{{ $jsProd.Permalink }}" integrity="{{ $jsProd.Data.Integrity }}" crossorigin="anonymous" defer></script>
-  <script src="{{ $indexProd.Permalink }}" integrity="{{ $indexProd.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/IEC-61499/IEC-61499.github.io@main{{ $jsProd.Permalink }}" integrity="{{ $jsProd.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/IEC-61499/IEC-61499.github.io@main{{ $indexProd.Permalink }}" integrity="{{ $indexProd.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
