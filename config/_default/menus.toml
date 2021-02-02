@@ -20,7 +20,7 @@
   name = "Mbed示例"
   weight = 2
   identifier = "mbed"
-  url = "/book/mbed/"
+  url = "/demo/mbed/"
 
 [[main]]
   name = "书籍"
