@@ -30,3 +30,5 @@ draft: false
 另一方面，本人对IEC 61499 标准中的许多概念理解不深，翻译过程中难免存在许多的误解。如果读者能及时向我提出来，将不胜感谢。
 
 > 我没有出版中译本的计划，这些书籍内容只是用于内部培训，或者与网络读者分享，不会用于商业目的。
+
+<div class="md:text-right mt-4 md:mt-0"><span class="block font-bold">下一页</span><a href="/docs/iec61499/002/" class="block">序言</a></div>
