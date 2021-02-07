@@ -1,0 +1,43 @@
+# Test and build your Hyas project
+# For more information see: https://henkverlinde.com/continuous-integration-workflow-for-your-hyas-project/
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+   #   with:
+   #     submodules: true  # Fetch Hugo themes (true OR recursive)
+   #     fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+    - name: Install Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+    
+    - name: Build
+      run: hugo --minify
+      
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.HUGO_TOKEN }}
+        external_repository: IEC-61499/IEC-61499.github.io
+        publish_branch: main  # default: gh-pages
+        publish_dir: ./public
+        cname: iec61499.com.cn
